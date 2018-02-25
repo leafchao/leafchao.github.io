@@ -1,0 +1,667 @@
+body,h1,h2,h5,p{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family:myFont;
+    src:url("../font/ariblk.ttf")
+}
+#loading{
+    width: 50px;
+    height: 50px;
+    background: rgb(203, 203, 203);
+    margin: 270px 650px;
+    position: absolute;
+    z-index: 120;
+}
+#loading:hover {
+    animation: loadingXZ 2s linear 3;
+    background: #55f6d6;
+}
+#central{
+    height: 640px;
+    /*height: 2000px;*/
+    width: 100%;
+    overflow: hidden;
+    /*opacity: 1;*/
+    /*background: cornflowerblue;*/
+    opacity: 0;
+    background: url("../images/bg-pattern.gif") left center  fixed ;
+    /*background-size:1349px;*/
+}
+#banner{
+    width: 100%;
+}
+.bannerMenu{
+    width: 1150px;
+    /*margin: 4px 101px;*/
+    overflow: hidden;
+    position: fixed;
+    top: 4px;
+    left: 101px;
+    z-index: 110;
+}
+.menuColor{
+    width: 100%;
+    height: 4px;
+    background: #52ebcd;
+    position: fixed;
+    opacity: 0;
+    z-index: 105;
+}
+.bannerMenuLeft{
+    margin-top: 10px;
+    float: left;
+    font-family: myFont;
+}
+.bannerMenuLeft h2{
+    color: white;
+}
+.bannerMenuRight{
+    width: 40px;
+    height: 50px;
+    float: right;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+.bannerMenuRight img{
+    width: 26px;
+    height: 20px;
+    margin-top: 2px;
+}
+.bannerMenuRight .heng1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 1;
+    /*border: 1px solid #000;*/
+}
+.bannerMenuRight .heng2{
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    opacity: 1;
+    /*border: 1px solid #000;*/
+}
+.bannerMenuRight .heng3{
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    opacity: 1;
+    /*border: 1px solid #000;*/
+}
+.bannerMenuRight .heng4{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+}
+.bannerMenuRight .heng5{
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    opacity: 0;
+}
+.bannerMenuRight .heng6{
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    opacity: 0;
+}
+#menuYe{
+    width: 100%;
+    height: 667px;
+    text-align: center;
+    background: #55f6d6;
+    color: white;
+    position: fixed;
+    left: -1450px;
+    top: 0px;
+    z-index: 108 ;
+    /*border: 1px solid #000;*/
+}
+#menuYe h1:nth-child(1){
+    margin-top: 40px;
+}
+#menuYe h1{
+    font-family: myFont;
+    font-size: 87px;
+    line-height: 76px;
+}
+#menuYe h1:nth-child(1):hover,#menuYe h1:nth-child(2):hover,#menuYe h1:nth-child(3):hover,#menuYe h1:nth-child(4):hover,#menuYe h1:nth-child(5):hover,#menuYe h1:nth-child(6):hover{
+    color: #8841c4;
+    cursor: pointer;
+}
+#menuYe p:nth-child(8){
+    font-size: 18px;
+}
+/*banner img*/
+#bannerNR{
+    width: 1349px;
+    height: 667px;
+    position: relative;
+}
+#bannerNR #bannerImg0,#bannerImg1,#bannerImg2{
+    width: 1349px;
+    height: 667px;
+    position: absolute;
+    left: 0px;
+}
+#bannerNR #bannerImg0 img,#bannerImg1 img,#bannerImg2 img{
+    width: 1349px;
+    height: 667px;
+}
+#bannerImg1,#bannerImg2{
+    left: 1349px;
+}
+#contSub{
+    position: absolute;
+    left: 50px;
+    bottom: -300px;
+    z-index: 99;
+    transition: all .3s linear;
+    color: white;
+}
+#contSub p{
+    font-size: 18px;
+    cursor: pointer;
+}
+#contSub h1{
+    font-family: myFont;
+    font-size: 70px;
+    line-height: 60px;
+    cursor: pointer;
+}
+#contSub ul li{
+    padding: 0;
+    margin: 0;
+}
+#contSub li.in{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background: #ffffff;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 5px 2px 10px rgba(0,0,0,.3);
+}
+.bannerUp{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    z-index: 105;
+}
+.bannerUp .bannerUpImg1 img{
+    width: 30px;
+    height: 30px;
+}
+.bannerUp .bannerUpImg2{
+    position: relative;
+    top: -26px;
+    right: -8px;
+}
+.bannerUp .bannerUpImg2 img{
+    width: 15px;
+    height: 15px;
+}
+#centralRow1{
+    width: 1349px;
+    height: 276px;
+    text-align: center;
+    background: white;
+    overflow: hidden;
+}
+#centralRow1 p:nth-child(1){
+    margin-top: 60px;
+}
+#centralRow1 h2{
+    font-family: myFont;
+    margin-top: 33px;
+}
+#centralRow1 p:nth-child(3){
+    margin-top: 40px;
+}
+/*674 406*/
+
+#centralRow2,.centralRow2Line1{
+    width: 1349px;
+}
+
+#centralRow2 ul li{
+    list-style: none;
+    float: left;
+
+}
+#centralRow2 ul,#centralRow2 li{
+    padding: 0;
+    margin: 0;
+}
+#centralRow2 ul li:nth-child(1){
+    width: 674px;
+}
+#centralRow2 ul li:nth-child(2){
+     width: 340px;
+}
+#centralRow2 ul li:nth-child(3){
+    width: 335px;
+}
+#centralRow2 .fu{
+    float: left;
+}
+.centralRow2Block1,.centralRow2Block2,.centralRow2Block5,.centralRow2Block6,.centralRow2Block7,.centralRow2Block8{
+    overflow: hidden;
+    position: relative;
+}
+#centralRow2 .B4after{
+    float: right;
+}
+.centralRow2Block1,.centralRow2Block1 img{
+    width: 674px;
+    height: 406px;
+}
+.centralRow2Block1JS{
+    width: 674px;
+    height: 62px;
+    color: white;
+    background: #181719;
+    position: absolute;
+    bottom: -62px;
+}
+.div1XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 378px;
+    left: 33px;
+    background: white;
+}
+.div1XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 368px;
+    left: 43px;
+    background: white;
+}
+.centralRow2Block1JS h4,.centralRow2Block5JS h4,.centralRow2Block8JS h4,.centralRow2Block6JS h4,.centralRow2Block7JS h4{
+    float: right;
+    margin-right: 30px;
+    font-family: myFont;
+}
+.centralRow2Block2JS h4{
+    float: right;
+    margin-top: 6px;
+    /*padding: 0;*/
+    margin-right: 30px;
+    font-family: myFont;
+}
+.centralRow2Block2,.centralRow2Block2 img{
+    width: 340px;
+    height: 338px;
+}
+.div2XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 306px;
+    left: 33px;
+    background: white;
+}
+.div2XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 296px;
+    left: 43px;
+    background: white;
+}
+.centralRow2Block2JS,.centralRow2Block6JS{
+    width: 340px;
+    height: 62px;
+    color: white;
+    background: #181719;
+    position: absolute;
+    bottom: -62px;
+}
+.centralRow2Block3{
+    width: 335px;
+    height: 406px;
+    background: #6a39d5;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+.centralRow2Block3 p{
+    margin-top: 30px;
+    margin-left: 26px;
+    font-family: myFont;
+    font-size: 14px;
+}
+.centralRow2Block3 h3{
+    margin-top: 33px;
+    margin-left: 26px;
+    font-family: myFont;
+}
+.div3XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 376px;
+    left: 33px;
+    background: white;
+}
+.div3XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 366px;
+    left: 43px;
+    background: white;
+}
+.centralRow2Block4{
+    width: 338px;
+    height: 743px;
+    display: inline-block;
+}
+.centralRow2Block4JS{
+    width: 282px;
+    height: 494px;
+    margin-top: 35px;
+    margin-left: 28px;
+    background: white;
+    color: #3b3b3b;
+    overflow: hidden;
+    position: relative;
+    box-shadow:10px 10px 30px 5px rgba(0,0,0,.2);
+}
+.centralRow2Block4JS p{
+    margin-top: 33px;
+    margin-left: 33px;
+    font-family: myFont;
+    font-size: 14px;
+}
+.centralRow2Block4JS h3{
+    margin-top: 33px;
+    margin-left: 33px;
+    font-family: myFont;
+}
+.div4XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 464px;
+    left: 33px;
+    background: black;
+}
+.div4XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 454px;
+    left: 43px;
+    background: black;
+}
+.centralRow2Block5,.centralRow2Block5 img{
+    width: 336px;
+    height: 406px;
+}
+.centralRow2Block5{
+    position: relative;
+}
+.div5XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 378px;
+    left: 33px;
+    background: white;
+}
+.div5XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 368px;
+    left: 43px;
+    background: white;
+}
+.centralRow2Block5JS,.centralRow2Block8JS{
+    width: 336px;
+    height: 62px;
+    color: white;
+    background: #181719;
+    position: absolute;
+    bottom: -62px;
+}
+.centralRow2Block6,.centralRow2Block6 img{
+    width: 340px;
+    height: 394px;
+}
+.div6XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 366px;
+    left: 33px;
+    background: white;
+}
+.div6XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 356px;
+    left: 43px;
+    background: white;
+}
+.centralRow2Block7,.centralRow2Block7 img{
+    width: 335px;
+    height: 400px;
+}
+.div7XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 373px;
+    left: 33px;
+    background: white;
+}
+.div7XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 363px;
+    left: 43px;
+    background: white;
+}
+.centralRow2Block7JS{
+    width: 335px;
+    height: 62px;
+    color: white;
+    background: #181719;
+    position: absolute;
+    bottom: -62px;
+}
+.centralRow2Block8,.centralRow2Block8 img{
+    width: 336px;
+    height: 337px;
+}
+.div8XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 308px;
+    left: 33px;
+    background: white;
+}
+.div8XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 298px;
+    left: 43px;
+    background: white;
+}
+.centralRow2Block9{
+    width: 340px;
+    height: 417px;
+    color: white;
+    background: #6a39d4;
+    overflow: hidden;
+    position: relative;
+}
+.centralRow2Block9 p{
+    margin-top: 30px;
+    margin-left: 26px;
+    font-family: myFont;
+    font-size: 14px;
+}
+.centralRow2Block9 h3{
+    margin-top: 33px;
+    margin-left: 26px;
+    font-family: myFont;
+}
+.div9XH{
+    width: 21px;
+    height: 1px;
+    position: absolute;
+    top: 387px;
+    left: 33px;
+    background: white;
+}
+.div9XS{
+    width: 1px;
+    height: 21px;
+    position: absolute;
+    top: 377px;
+    left: 43px;
+    background: white;
+}
+#centralRow3{
+    width: 1349px;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    background: url("../images/nyc-timelapse-manhattan-bridge.jpg");
+    background-size: 1349px 400px;
+}
+.centralRow3MC{
+    width: 1349px;
+    height: 400px;
+    opacity: 0;
+    background: #161517;
+    float: left;
+    margin-top: -300px;
+}
+#centralRow3 .imgQiao img{
+    width: 16px;
+    height: 16px;
+    position:absolute;
+    left: 0px;
+}
+#centralRow3 h2{
+    margin-top: 111px;
+    font-family: myFont;
+}
+#centralRow3 h5{
+    font-family: myFont;
+}
+#centralRow3 p:nth-child(3){
+    margin-top: 42px;
+}
+#centralRow3 .imgQiao{
+    width: 16px;
+    height: 16px;
+    margin: 22px auto;
+    position: relative;
+}
+#footer{
+    width: 1012px;
+    height: 250px;
+    background: #161517;
+    overflow: hidden;
+    color: white;
+}
+#footer ul,li{
+    padding: 0;
+    margin: 0;
+}
+#footer ul li{
+    list-style: none;
+    float: left;
+}
+#footer ul li:nth-child(1){
+    width: 230px;
+    margin-left: 70px;
+}
+#footer ul li:nth-child(1) h2{
+    margin-top: 70px;
+    font-family: myFont;
+}
+#footer ul li:nth-child(1) p{
+    margin-top: 100px;
+    font-size: 14px;
+}
+#footer ul li:nth-child(2){
+    width: 220px;
+}
+#footer ul li:nth-child(2) h3{
+    margin-top: 70px;
+    font-family: myFont;
+}
+#footer ul li:nth-child(2) p:nth-child(1){
+    margin-top: 22px;
+    font-size: 14px;
+}
+#footer ul li:nth-child(2) a{
+    color: white;
+}
+#footer ul li:nth-child(3){
+    width: 350px;
+}
+#footer ul li:nth-child(3) h3{
+    margin-top: 70px;
+    font-family: myFont;
+}
+#footer ul li:nth-child(3) p:nth-child(1){
+    margin-top: 22px;
+    font-size: 14px;
+}
+#footer ul li:nth-child(3) a{
+    color: white;
+}
+#footer ul li:nth-child(4){
+    width: 50px;
+    position: relative;
+}
+#footer ul li:nth-child(4) .divUpW{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    opacity: 1;
+}
+#footer .divUpW img{
+    width: 16px;
+    height: 16px;
+}
+#footer ul li:nth-child(4) .divUpB{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    opacity: 0;
+}
+#footer .divUpB img{
+    width: 16px;
+    height: 16px;
+}
+
+
+
